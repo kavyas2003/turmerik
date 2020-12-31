@@ -1,0 +1,881 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		53265FB8247DF325003F523F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FB7247DF325003F523F /* AppDelegate.swift */; };
+		53265FBA247DF325003F523F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FB9247DF325003F523F /* SceneDelegate.swift */; };
+		53265FBC247DF325003F523F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FBB247DF325003F523F /* ContentView.swift */; };
+		53265FBE247DF334003F523F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53265FBD247DF334003F523F /* Assets.xcassets */; };
+		53265FC1247DF334003F523F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53265FC0247DF334003F523F /* Preview Assets.xcassets */; };
+		53265FC4247DF334003F523F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53265FC2247DF334003F523F /* LaunchScreen.storyboard */; };
+		53265FCF247DF335003F523F /* turmericTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FCE247DF335003F523F /* turmericTests.swift */; };
+		53265FDA247DF335003F523F /* turmericUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FD9247DF335003F523F /* turmericUITests.swift */; };
+		53265FEC247DF757003F523F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FEB247DF757003F523F /* LoginView.swift */; };
+		53265FEE247DF84C003F523F /* MedicineListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53265FED247DF84C003F523F /* MedicineListView.swift */; };
+		5326603424831D0E003F523F /* Medicine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326603324831D0E003F523F /* Medicine.swift */; };
+		5326603624832762003F523F /* MedicineHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5326603524832762003F523F /* MedicineHelper.swift */; };
+		536879EC2496CBFC005449D5 /* MedicineDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536879EB2496CBFC005449D5 /* MedicineDetailView.swift */; };
+		536879EE24992E82005449D5 /* MedicineImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536879ED24992E82005449D5 /* MedicineImage.swift */; };
+		536CAB1124F8BD8F009CA443 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CAB1024F8BD8F009CA443 /* User.swift */; };
+		536CAB1C24FC47B3009CA443 /* DButils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159E024AFBB280058EC4B /* DButils.swift */; };
+		536CCA80249EC2180093A484 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CCA7F249EC2180093A484 /* SettingsView.swift */; };
+		537159CD24A5AFAE0058EC4B /* MonthCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159CC24A5AFAE0058EC4B /* MonthCalendarView.swift */; };
+		537159D124A5AFDE0058EC4B /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159D024A5AFDE0058EC4B /* RegisterView.swift */; };
+		537159D524A5B0240058EC4B /* PwSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159D424A5B0240058EC4B /* PwSettingsView.swift */; };
+		537159D724A5B0390058EC4B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159D624A5B0390058EC4B /* ProfileView.swift */; };
+		537159D924A5B20D0058EC4B /* DayCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159D824A5B20D0058EC4B /* DayCalendarView.swift */; };
+		537159DB24A5B7EE0058EC4B /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159DA24A5B7EE0058EC4B /* CalendarView.swift */; };
+		537159E124AFBB280058EC4B /* DButils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 537159E024AFBB280058EC4B /* DButils.swift */; };
+		5379075024C4F77C00ABFCB3 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379074F24C4F77C00ABFCB3 /* CameraView.swift */; };
+		5379075424C4F8D200ABFCB3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5379075324C4F8D200ABFCB3 /* ImagePicker.swift */; };
+		5381898C25660F1E00310B90 /* MedicineNameTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5381898B25660F1E00310B90 /* MedicineNameTime.swift */; };
+		53A80215255A544E005451A7 /* TodayMedicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53A80214255A544D005451A7 /* TodayMedicineList.swift */; };
+		53A9AE3624A56FAF00DF3D38 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 53A9AE3524A56FAF00DF3D38 /* Default-568h@2x.png */; };
+		53AEBA78254A7B8900479790 /* AddMedicineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AEBA77254A7B8800479790 /* AddMedicineView.swift */; };
+		53B700162516B1AC00E4E473 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B700152516B1AC00E4E473 /* ScheduleView.swift */; };
+		53B7001A25170DEF00E4E473 /* MedicineSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B7001925170DEF00E4E473 /* MedicineSchedule.swift */; };
+		53B92D7024E78A83001DA15C /* UserHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B92D6F24E78A83001DA15C /* UserHelper.swift */; };
+		53CA0C92256C700B00A994E5 /* UIResponder+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CA0C8F256C700A00A994E5 /* UIResponder+Current.swift */; };
+		53CA0C93256C700B00A994E5 /* KeyboardHeightPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CA0C90256C700A00A994E5 /* KeyboardHeightPublisher.swift */; };
+		53CA0C94256C700B00A994E5 /* KeyboardAdaptive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CA0C91256C700A00A994E5 /* KeyboardAdaptive.swift */; };
+		53CA0C97256C702A00A994E5 /* MedicineLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CA0C95256C702A00A994E5 /* MedicineLogView.swift */; };
+		53CA0C98256C702A00A994E5 /* MedicineLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53CA0C96256C702A00A994E5 /* MedicineLog.swift */; };
+		68413B44257D4489008859B7 /* MedicineHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68673B0C257D3B2A00625753 /* MedicineHelpView.swift */; };
+		68413B45257D448D008859B7 /* MedicineHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68673B0C257D3B2A00625753 /* MedicineHelpView.swift */; };
+		686E15C82511D13600C42F94 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E15C72511D13600C42F94 /* GlobalConstants.swift */; };
+		686E15CA2511D3D900C42F94 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 686E15C92511D3D900C42F94 /* ErrorMessage.swift */; };
+		6875DE8C2564DFB600AD1642 /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6875DE8B2564DFB600AD1642 /* ImageDetailView.swift */; };
+		687EC1FD25311491000927A3 /* MedicineDropdowns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 687EC1FC25311491000927A3 /* MedicineDropdowns.swift */; };
+		687EC1FF253119DB000927A3 /* tablets.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 687EC1FE253119DB000927A3 /* tablets.jpg */; };
+		68898B3C2514047F00143E16 /* RKCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B3B2514047F00143E16 /* RKCell.swift */; };
+		68898B3E251404A000143E16 /* RKColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B3D251404A000143E16 /* RKColorSettings.swift */; };
+		68898B40251404B200143E16 /* RKDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B3F251404B200143E16 /* RKDate.swift */; };
+		68898B42251404C600143E16 /* RKManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B41251404C600143E16 /* RKManager.swift */; };
+		68898B44251404D500143E16 /* RKMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B43251404D500143E16 /* RKMonth.swift */; };
+		68898B46251404E000143E16 /* RKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B45251404E000143E16 /* RKViewController.swift */; };
+		68898B48251404F100143E16 /* RKWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B47251404F100143E16 /* RKWeekdayHeader.swift */; };
+		68898B4A2514064700143E16 /* MedicineMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B492514064700143E16 /* MedicineMonthView.swift */; };
+		68898B4C251488BA00143E16 /* CalendarContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B4B251488BA00143E16 /* CalendarContentView.swift */; };
+		68898B4E251570EA00143E16 /* RKContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B4D251570EA00143E16 /* RKContentView.swift */; };
+		68898B52251577CA00143E16 /* MedicineDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B51251577CA00143E16 /* MedicineDayView.swift */; };
+		68898B5425157D1700143E16 /* CalendarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B5325157D1700143E16 /* CalendarData.swift */; };
+		68898B9A251698FB00143E16 /* LocalNotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B99251698FB00143E16 /* LocalNotificationDelegate.swift */; };
+		68898B9C2516992000143E16 /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68898B9B2516992000143E16 /* LocalNotificationManager.swift */; };
+		68BCA27725104D3D00F0FDE4 /* MedicineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCA27625104D3D00F0FDE4 /* MedicineView.swift */; };
+		68BCA28125107CD200F0FDE4 /* MedicineList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BCA28025107CD200F0FDE4 /* MedicineList.swift */; };
+		68F61705250DBA6900E02CCD /* FileUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F61704250DBA6900E02CCD /* FileUtils.swift */; };
+		68F61787250F368600E02CCD /* TabbedAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68F61786250F368600E02CCD /* TabbedAppView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53265FCB247DF335003F523F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53265FAC247DF324003F523F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53265FB3247DF324003F523F;
+			remoteInfo = turmeric;
+		};
+		53265FD6247DF335003F523F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53265FAC247DF324003F523F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53265FB3247DF324003F523F;
+			remoteInfo = turmeric;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		53265FB4247DF324003F523F /* turmeric.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = turmeric.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53265FB7247DF325003F523F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		53265FB9247DF325003F523F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		53265FBB247DF325003F523F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53265FBD247DF334003F523F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53265FC0247DF334003F523F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53265FC3247DF334003F523F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53265FC5247DF334003F523F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53265FCA247DF335003F523F /* turmericTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = turmericTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53265FCE247DF335003F523F /* turmericTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turmericTests.swift; sourceTree = "<group>"; };
+		53265FD0247DF335003F523F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53265FD5247DF335003F523F /* turmericUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = turmericUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53265FD9247DF335003F523F /* turmericUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = turmericUITests.swift; sourceTree = "<group>"; };
+		53265FDB247DF335003F523F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53265FEB247DF757003F523F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		53265FED247DF84C003F523F /* MedicineListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineListView.swift; sourceTree = "<group>"; };
+		5326603324831D0E003F523F /* Medicine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medicine.swift; sourceTree = "<group>"; };
+		5326603524832762003F523F /* MedicineHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineHelper.swift; sourceTree = "<group>"; };
+		536879EB2496CBFC005449D5 /* MedicineDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDetailView.swift; sourceTree = "<group>"; };
+		536879ED24992E82005449D5 /* MedicineImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineImage.swift; sourceTree = "<group>"; };
+		536CAB1024F8BD8F009CA443 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		536CCA7F249EC2180093A484 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		537159CC24A5AFAE0058EC4B /* MonthCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthCalendarView.swift; sourceTree = "<group>"; };
+		537159D024A5AFDE0058EC4B /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		537159D424A5B0240058EC4B /* PwSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwSettingsView.swift; sourceTree = "<group>"; };
+		537159D624A5B0390058EC4B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		537159D824A5B20D0058EC4B /* DayCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCalendarView.swift; sourceTree = "<group>"; };
+		537159DA24A5B7EE0058EC4B /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		537159E024AFBB280058EC4B /* DButils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DButils.swift; sourceTree = "<group>"; };
+		5379074F24C4F77C00ABFCB3 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		5379075324C4F8D200ABFCB3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		5381898B25660F1E00310B90 /* MedicineNameTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineNameTime.swift; sourceTree = "<group>"; };
+		53A80214255A544D005451A7 /* TodayMedicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayMedicineList.swift; sourceTree = "<group>"; };
+		53A9AE3524A56FAF00DF3D38 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		53AEBA77254A7B8800479790 /* AddMedicineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedicineView.swift; sourceTree = "<group>"; };
+		53B700152516B1AC00E4E473 /* ScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleView.swift; sourceTree = "<group>"; };
+		53B7001925170DEF00E4E473 /* MedicineSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineSchedule.swift; sourceTree = "<group>"; };
+		53B92D6F24E78A83001DA15C /* UserHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHelper.swift; sourceTree = "<group>"; };
+		53CA0C8F256C700A00A994E5 /* UIResponder+Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIResponder+Current.swift"; sourceTree = "<group>"; };
+		53CA0C90256C700A00A994E5 /* KeyboardHeightPublisher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardHeightPublisher.swift; sourceTree = "<group>"; };
+		53CA0C91256C700A00A994E5 /* KeyboardAdaptive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAdaptive.swift; sourceTree = "<group>"; };
+		53CA0C95256C702A00A994E5 /* MedicineLogView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineLogView.swift; sourceTree = "<group>"; };
+		53CA0C96256C702A00A994E5 /* MedicineLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineLog.swift; sourceTree = "<group>"; };
+		68673B0C257D3B2A00625753 /* MedicineHelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicineHelpView.swift; sourceTree = "<group>"; };
+		686E15C72511D13600C42F94 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		686E15C92511D3D900C42F94 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		6875DE8B2564DFB600AD1642 /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		687EC1FC25311491000927A3 /* MedicineDropdowns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDropdowns.swift; sourceTree = "<group>"; };
+		687EC1FE253119DB000927A3 /* tablets.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tablets.jpg; sourceTree = "<group>"; };
+		68898B3B2514047F00143E16 /* RKCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKCell.swift; sourceTree = "<group>"; };
+		68898B3D251404A000143E16 /* RKColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKColorSettings.swift; sourceTree = "<group>"; };
+		68898B3F251404B200143E16 /* RKDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKDate.swift; sourceTree = "<group>"; };
+		68898B41251404C600143E16 /* RKManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKManager.swift; sourceTree = "<group>"; };
+		68898B43251404D500143E16 /* RKMonth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKMonth.swift; sourceTree = "<group>"; };
+		68898B45251404E000143E16 /* RKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKViewController.swift; sourceTree = "<group>"; };
+		68898B47251404F100143E16 /* RKWeekdayHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKWeekdayHeader.swift; sourceTree = "<group>"; };
+		68898B492514064700143E16 /* MedicineMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineMonthView.swift; sourceTree = "<group>"; };
+		68898B4B251488BA00143E16 /* CalendarContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarContentView.swift; sourceTree = "<group>"; };
+		68898B4D251570EA00143E16 /* RKContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKContentView.swift; sourceTree = "<group>"; };
+		68898B51251577CA00143E16 /* MedicineDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineDayView.swift; sourceTree = "<group>"; };
+		68898B5325157D1700143E16 /* CalendarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarData.swift; sourceTree = "<group>"; };
+		68898B99251698FB00143E16 /* LocalNotificationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationDelegate.swift; sourceTree = "<group>"; };
+		68898B9B2516992000143E16 /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		68BCA27625104D3D00F0FDE4 /* MedicineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineView.swift; sourceTree = "<group>"; };
+		68BCA28025107CD200F0FDE4 /* MedicineList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicineList.swift; sourceTree = "<group>"; };
+		68F61704250DBA6900E02CCD /* FileUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtils.swift; sourceTree = "<group>"; };
+		68F61786250F368600E02CCD /* TabbedAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedAppView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53265FB1247DF324003F523F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53265FC7247DF335003F523F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53265FD2247DF335003F523F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		53265FAB247DF324003F523F = {
+			isa = PBXGroup;
+			children = (
+				53A9AE3524A56FAF00DF3D38 /* Default-568h@2x.png */,
+				53265FB6247DF324003F523F /* turmeric */,
+				53265FCD247DF335003F523F /* turmericTests */,
+				53265FD8247DF335003F523F /* turmericUITests */,
+				53265FB5247DF324003F523F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53265FB5247DF324003F523F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53265FB4247DF324003F523F /* turmeric.app */,
+				53265FCA247DF335003F523F /* turmericTests.xctest */,
+				53265FD5247DF335003F523F /* turmericUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53265FB6247DF324003F523F /* turmeric */ = {
+			isa = PBXGroup;
+			children = (
+				536CAB1A24FC4559009CA443 /* Settings */,
+				537159DC24AFBA160058EC4B /* CommonUtils */,
+				53265FBF247DF334003F523F /* Preview Content */,
+				536CAB1524FC4277009CA443 /* Medicine */,
+				53265FC5247DF334003F523F /* Info.plist */,
+				687EC1FE253119DB000927A3 /* tablets.jpg */,
+				53265FBD247DF334003F523F /* Assets.xcassets */,
+				68F61786250F368600E02CCD /* TabbedAppView.swift */,
+				53265FC2247DF334003F523F /* LaunchScreen.storyboard */,
+				53265FBB247DF325003F523F /* ContentView.swift */,
+				68898B4B251488BA00143E16 /* CalendarContentView.swift */,
+				53265FB7247DF325003F523F /* AppDelegate.swift */,
+				53265FB9247DF325003F523F /* SceneDelegate.swift */,
+			);
+			path = turmeric;
+			sourceTree = "<group>";
+		};
+		53265FBF247DF334003F523F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				53265FC0247DF334003F523F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53265FCD247DF335003F523F /* turmericTests */ = {
+			isa = PBXGroup;
+			children = (
+				53265FCE247DF335003F523F /* turmericTests.swift */,
+				53265FD0247DF335003F523F /* Info.plist */,
+			);
+			path = turmericTests;
+			sourceTree = "<group>";
+		};
+		53265FD8247DF335003F523F /* turmericUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53265FD9247DF335003F523F /* turmericUITests.swift */,
+				53265FDB247DF335003F523F /* Info.plist */,
+			);
+			path = turmericUITests;
+			sourceTree = "<group>";
+		};
+		536CAB1524FC4277009CA443 /* Medicine */ = {
+			isa = PBXGroup;
+			children = (
+				53CA0C96256C702A00A994E5 /* MedicineLog.swift */,
+				53CA0C95256C702A00A994E5 /* MedicineLogView.swift */,
+				53AEBA77254A7B8800479790 /* AddMedicineView.swift */,
+				53B700152516B1AC00E4E473 /* ScheduleView.swift */,
+				536879ED24992E82005449D5 /* MedicineImage.swift */,
+				5326603524832762003F523F /* MedicineHelper.swift */,
+				53265FED247DF84C003F523F /* MedicineListView.swift */,
+				68BCA27625104D3D00F0FDE4 /* MedicineView.swift */,
+				5326603324831D0E003F523F /* Medicine.swift */,
+				536879EB2496CBFC005449D5 /* MedicineDetailView.swift */,
+				68673B0C257D3B2A00625753 /* MedicineHelpView.swift */,
+				5381898B25660F1E00310B90 /* MedicineNameTime.swift */,
+				68BCA28025107CD200F0FDE4 /* MedicineList.swift */,
+				68898B51251577CA00143E16 /* MedicineDayView.swift */,
+				68898B492514064700143E16 /* MedicineMonthView.swift */,
+				53B7001925170DEF00E4E473 /* MedicineSchedule.swift */,
+				687EC1FC25311491000927A3 /* MedicineDropdowns.swift */,
+				53A80214255A544D005451A7 /* TodayMedicineList.swift */,
+			);
+			path = Medicine;
+			sourceTree = "<group>";
+		};
+		536CAB1624FC429C009CA443 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				537159D624A5B0390058EC4B /* ProfileView.swift */,
+				537159D424A5B0240058EC4B /* PwSettingsView.swift */,
+				53B92D6F24E78A83001DA15C /* UserHelper.swift */,
+				53265FEB247DF757003F523F /* LoginView.swift */,
+				536CAB1024F8BD8F009CA443 /* User.swift */,
+				537159D024A5AFDE0058EC4B /* RegisterView.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		536CAB1824FC42D9009CA443 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				5379075324C4F8D200ABFCB3 /* ImagePicker.swift */,
+				5379074F24C4F77C00ABFCB3 /* CameraView.swift */,
+				6875DE8B2564DFB600AD1642 /* ImageDetailView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		536CAB1924FC42FC009CA443 /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				537159D824A5B20D0058EC4B /* DayCalendarView.swift */,
+				537159DA24A5B7EE0058EC4B /* CalendarView.swift */,
+				68898B4D251570EA00143E16 /* RKContentView.swift */,
+				537159CC24A5AFAE0058EC4B /* MonthCalendarView.swift */,
+				68898B3B2514047F00143E16 /* RKCell.swift */,
+				68898B3D251404A000143E16 /* RKColorSettings.swift */,
+				68898B3F251404B200143E16 /* RKDate.swift */,
+				68898B41251404C600143E16 /* RKManager.swift */,
+				68898B43251404D500143E16 /* RKMonth.swift */,
+				68898B45251404E000143E16 /* RKViewController.swift */,
+				68898B47251404F100143E16 /* RKWeekdayHeader.swift */,
+				68898B5325157D1700143E16 /* CalendarData.swift */,
+			);
+			path = Calendar;
+			sourceTree = "<group>";
+		};
+		536CAB1A24FC4559009CA443 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				536CCA7F249EC2180093A484 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		537159DC24AFBA160058EC4B /* CommonUtils */ = {
+			isa = PBXGroup;
+			children = (
+				53CA0C8E256C700A00A994E5 /* Keyboard */,
+				68898B98251698DD00143E16 /* Notifications */,
+				686E15C72511D13600C42F94 /* GlobalConstants.swift */,
+				537159E024AFBB280058EC4B /* DButils.swift */,
+				536CAB1924FC42FC009CA443 /* Calendar */,
+				536CAB1824FC42D9009CA443 /* Image */,
+				536CAB1624FC429C009CA443 /* User */,
+				68F61704250DBA6900E02CCD /* FileUtils.swift */,
+				686E15C92511D3D900C42F94 /* ErrorMessage.swift */,
+			);
+			path = CommonUtils;
+			sourceTree = "<group>";
+		};
+		53CA0C8E256C700A00A994E5 /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				53CA0C8F256C700A00A994E5 /* UIResponder+Current.swift */,
+				53CA0C90256C700A00A994E5 /* KeyboardHeightPublisher.swift */,
+				53CA0C91256C700A00A994E5 /* KeyboardAdaptive.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		68898B98251698DD00143E16 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				68898B99251698FB00143E16 /* LocalNotificationDelegate.swift */,
+				68898B9B2516992000143E16 /* LocalNotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53265FB3247DF324003F523F /* turmeric */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53265FDE247DF335003F523F /* Build configuration list for PBXNativeTarget "turmeric" */;
+			buildPhases = (
+				53265FB0247DF324003F523F /* Sources */,
+				53265FB1247DF324003F523F /* Frameworks */,
+				53265FB2247DF324003F523F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = turmeric;
+			productName = turmeric;
+			productReference = 53265FB4247DF324003F523F /* turmeric.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53265FC9247DF335003F523F /* turmericTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53265FE1247DF335003F523F /* Build configuration list for PBXNativeTarget "turmericTests" */;
+			buildPhases = (
+				53265FC6247DF335003F523F /* Sources */,
+				53265FC7247DF335003F523F /* Frameworks */,
+				53265FC8247DF335003F523F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53265FCC247DF335003F523F /* PBXTargetDependency */,
+			);
+			name = turmericTests;
+			productName = turmericTests;
+			productReference = 53265FCA247DF335003F523F /* turmericTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53265FD4247DF335003F523F /* turmericUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53265FE4247DF335003F523F /* Build configuration list for PBXNativeTarget "turmericUITests" */;
+			buildPhases = (
+				53265FD1247DF335003F523F /* Sources */,
+				53265FD2247DF335003F523F /* Frameworks */,
+				53265FD3247DF335003F523F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53265FD7247DF335003F523F /* PBXTargetDependency */,
+			);
+			name = turmericUITests;
+			productName = turmericUITests;
+			productReference = 53265FD5247DF335003F523F /* turmericUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53265FAC247DF324003F523F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "kavya sriram";
+				TargetAttributes = {
+					53265FB3247DF324003F523F = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					53265FC9247DF335003F523F = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 53265FB3247DF324003F523F;
+					};
+					53265FD4247DF335003F523F = {
+						CreatedOnToolsVersion = 11.4.1;
+						TestTargetID = 53265FB3247DF324003F523F;
+					};
+				};
+			};
+			buildConfigurationList = 53265FAF247DF324003F523F /* Build configuration list for PBXProject "turmeric" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53265FAB247DF324003F523F;
+			productRefGroup = 53265FB5247DF324003F523F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53265FB3247DF324003F523F /* turmeric */,
+				53265FC9247DF335003F523F /* turmericTests */,
+				53265FD4247DF335003F523F /* turmericUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53265FB2247DF324003F523F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53265FC4247DF334003F523F /* LaunchScreen.storyboard in Resources */,
+				53A9AE3624A56FAF00DF3D38 /* Default-568h@2x.png in Resources */,
+				53265FC1247DF334003F523F /* Preview Assets.xcassets in Resources */,
+				687EC1FF253119DB000927A3 /* tablets.jpg in Resources */,
+				53265FBE247DF334003F523F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53265FC8247DF335003F523F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53265FD3247DF335003F523F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53265FB0247DF324003F523F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68F61787250F368600E02CCD /* TabbedAppView.swift in Sources */,
+				68898B4E251570EA00143E16 /* RKContentView.swift in Sources */,
+				537159D924A5B20D0058EC4B /* DayCalendarView.swift in Sources */,
+				536879EC2496CBFC005449D5 /* MedicineDetailView.swift in Sources */,
+				537159CD24A5AFAE0058EC4B /* MonthCalendarView.swift in Sources */,
+				53CA0C98256C702A00A994E5 /* MedicineLog.swift in Sources */,
+				686E15C82511D13600C42F94 /* GlobalConstants.swift in Sources */,
+				53CA0C92256C700B00A994E5 /* UIResponder+Current.swift in Sources */,
+				68898B4A2514064700143E16 /* MedicineMonthView.swift in Sources */,
+				5379075024C4F77C00ABFCB3 /* CameraView.swift in Sources */,
+				68898B3C2514047F00143E16 /* RKCell.swift in Sources */,
+				537159D524A5B0240058EC4B /* PwSettingsView.swift in Sources */,
+				686E15CA2511D3D900C42F94 /* ErrorMessage.swift in Sources */,
+				53265FB8247DF325003F523F /* AppDelegate.swift in Sources */,
+				68898B46251404E000143E16 /* RKViewController.swift in Sources */,
+				537159D124A5AFDE0058EC4B /* RegisterView.swift in Sources */,
+				5379075424C4F8D200ABFCB3 /* ImagePicker.swift in Sources */,
+				5326603424831D0E003F523F /* Medicine.swift in Sources */,
+				537159E124AFBB280058EC4B /* DButils.swift in Sources */,
+				6875DE8C2564DFB600AD1642 /* ImageDetailView.swift in Sources */,
+				53B92D7024E78A83001DA15C /* UserHelper.swift in Sources */,
+				53CA0C94256C700B00A994E5 /* KeyboardAdaptive.swift in Sources */,
+				68F61705250DBA6900E02CCD /* FileUtils.swift in Sources */,
+				68898B9C2516992000143E16 /* LocalNotificationManager.swift in Sources */,
+				53CA0C93256C700B00A994E5 /* KeyboardHeightPublisher.swift in Sources */,
+				68BCA28125107CD200F0FDE4 /* MedicineList.swift in Sources */,
+				537159D724A5B0390058EC4B /* ProfileView.swift in Sources */,
+				687EC1FD25311491000927A3 /* MedicineDropdowns.swift in Sources */,
+				53AEBA78254A7B8900479790 /* AddMedicineView.swift in Sources */,
+				68BCA27725104D3D00F0FDE4 /* MedicineView.swift in Sources */,
+				5326603624832762003F523F /* MedicineHelper.swift in Sources */,
+				68898B44251404D500143E16 /* RKMonth.swift in Sources */,
+				53CA0C97256C702A00A994E5 /* MedicineLogView.swift in Sources */,
+				68898B3E251404A000143E16 /* RKColorSettings.swift in Sources */,
+				53A80215255A544E005451A7 /* TodayMedicineList.swift in Sources */,
+				68413B44257D4489008859B7 /* MedicineHelpView.swift in Sources */,
+				68898B40251404B200143E16 /* RKDate.swift in Sources */,
+				68898B4C251488BA00143E16 /* CalendarContentView.swift in Sources */,
+				68898B9A251698FB00143E16 /* LocalNotificationDelegate.swift in Sources */,
+				53B700162516B1AC00E4E473 /* ScheduleView.swift in Sources */,
+				53265FBA247DF325003F523F /* SceneDelegate.swift in Sources */,
+				536879EE24992E82005449D5 /* MedicineImage.swift in Sources */,
+				68898B42251404C600143E16 /* RKManager.swift in Sources */,
+				53265FEC247DF757003F523F /* LoginView.swift in Sources */,
+				537159DB24A5B7EE0058EC4B /* CalendarView.swift in Sources */,
+				536CAB1124F8BD8F009CA443 /* User.swift in Sources */,
+				68898B52251577CA00143E16 /* MedicineDayView.swift in Sources */,
+				53265FEE247DF84C003F523F /* MedicineListView.swift in Sources */,
+				53265FBC247DF325003F523F /* ContentView.swift in Sources */,
+				68898B5425157D1700143E16 /* CalendarData.swift in Sources */,
+				536CCA80249EC2180093A484 /* SettingsView.swift in Sources */,
+				53B7001A25170DEF00E4E473 /* MedicineSchedule.swift in Sources */,
+				5381898C25660F1E00310B90 /* MedicineNameTime.swift in Sources */,
+				68898B48251404F100143E16 /* RKWeekdayHeader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53265FC6247DF335003F523F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53265FCF247DF335003F523F /* turmericTests.swift in Sources */,
+				536CAB1C24FC47B3009CA443 /* DButils.swift in Sources */,
+				68413B45257D448D008859B7 /* MedicineHelpView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53265FD1247DF335003F523F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53265FDA247DF335003F523F /* turmericUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53265FCC247DF335003F523F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53265FB3247DF324003F523F /* turmeric */;
+			targetProxy = 53265FCB247DF335003F523F /* PBXContainerItemProxy */;
+		};
+		53265FD7247DF335003F523F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53265FB3247DF324003F523F /* turmeric */;
+			targetProxy = 53265FD6247DF335003F523F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53265FC2247DF334003F523F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53265FC3247DF334003F523F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53265FDC247DF335003F523F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		53265FDD247DF335003F523F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53265FDF247DF335003F523F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"turmeric/Preview Content\"";
+				DEVELOPMENT_TEAM = PNC36VWPHB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = turmeric/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adikainc.turmeric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		53265FE0247DF335003F523F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_ASSET_PATHS = "\"turmeric/Preview Content\"";
+				DEVELOPMENT_TEAM = PNC36VWPHB;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = turmeric/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.adikainc.turmeric;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		53265FE2247DF335003F523F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = turmericTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = h.turmericTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/turmeric.app/turmeric";
+			};
+			name = Debug;
+		};
+		53265FE3247DF335003F523F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = turmericTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = h.turmericTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/turmeric.app/turmeric";
+			};
+			name = Release;
+		};
+		53265FE5247DF335003F523F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = turmericUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = h.turmericUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = turmeric;
+			};
+			name = Debug;
+		};
+		53265FE6247DF335003F523F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = turmericUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = h.turmericUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = turmeric;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53265FAF247DF324003F523F /* Build configuration list for PBXProject "turmeric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53265FDC247DF335003F523F /* Debug */,
+				53265FDD247DF335003F523F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53265FDE247DF335003F523F /* Build configuration list for PBXNativeTarget "turmeric" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53265FDF247DF335003F523F /* Debug */,
+				53265FE0247DF335003F523F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53265FE1247DF335003F523F /* Build configuration list for PBXNativeTarget "turmericTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53265FE2247DF335003F523F /* Debug */,
+				53265FE3247DF335003F523F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53265FE4247DF335003F523F /* Build configuration list for PBXNativeTarget "turmericUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53265FE5247DF335003F523F /* Debug */,
+				53265FE6247DF335003F523F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53265FAC247DF324003F523F /* Project object */;
+}
